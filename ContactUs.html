@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CONTACT US</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: hsl(51, 100%, 37%);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .main-content, .sidebar {
+            background: #f7f2d2;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            flex: 2;
+            margin-right: 10px;
+        }
+        .sidebar {
+            flex: 1;
+            margin-left: 10px;
+            height: fit-content;
+        }
+        .sidebar h2 {
+            text-decoration: underline;
+            text-align: center;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<nav>
+    <li>
+        <a href="Kaizer Chiefs Home.html">Home</a>
+    </li>
+</nav>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h1>CONTACT US</h1>
+            <p>The art of communication is the language of leadership but in the digital world, communication becomes so much more complex; conversations become text messages or emails, shouting and arguments happen in capital letters, emotions are shown by status updates and emoji’s and people feel free to say exactly what they want without any filters or checks. That is why our first act of Family love is to listen. We subscribe to the ethos that good communication is essential to good relationships and therefore we cordially invite you to keep talking to us – please feel free to use any of our channels or platforms. We will always respect your opinion and value your contribution.</p>
+            <div class="contact-info">
+                <p>
+                    <i class="bi bi-telephone-fill"></i>
+                    <a href="tel:+27119411465">+27 (0) 11 941 1465</a>
+                </p>
+                <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:info@kaizerchiefs.com">info@kaizerchiefs.com</a>
+                </p>
+                <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:supporters@kaizerchiefs.com">supporters@kaizerchiefs.com</a>
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    P O Box 2610, Johannesburg, 2000
+                </p>
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    5/6 Lena Road, Lenaron, Naturena, Johannesburg, 2064
+                </p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <form id="signupForm" action="/submit_signup" method="post" onsubmit="redirectAfterSubmit(event)">
+                <h2>SEND MESSAGE</h2>
+                <p>For any queries or complaints, please leave a message here;</p>
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Enter your message here" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function redirectAfterSubmit(event) {
+            event.preventDefault();
+            console.log("Form submitted!");
+            window.location.href = 'ContactUs.html';
+        }
+    </script>
+</body>
+</html>
