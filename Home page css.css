@@ -1,0 +1,113 @@
+header {
+    height: 120px;;
+background-image: url("replica2.png");
+background-repeat: no-repeat;
+background-position: center;
+align-items: center;
+}
+
+    header h2 {
+        color: hsl(51, 100%, 37%);
+        float: right;
+    }
+  
+    body {
+        
+background-image: url("https://i.pinimg.com/736x/ca/42/6d/ca426d4c6d696fe358da1b9cc549a281.jpg");
+margin: 0;
+font-family: Arial, sans-serif;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+           }
+
+    nav {
+        background: #f7f2d2;
+        cursor: pointer;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 20px;
+        font-weight: 700;
+    }
+
+    nav ul li a:hover {
+        color: #ff0000;
+        text-decoration: underline;
+    }
+
+    .history {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    
+
+    .main-content, .sidebar {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border-radius: 10px; 
+    }
+    
+    .main-content {
+        width: 70%;
+        padding: 20px;
+        box-sizing: border-box;
+        background: #f7f2d2;
+        margin-top: 20px;
+        margin-right: 6px;
+    }
+    
+    .sidebar {
+        width: 28%;
+        background: #f7f2d2;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-left: 6px;
+        height: 130vh;
+        overflow-y: auto;
+    }
+    
+    
+    footer {
+        background: #f7f2d2;
+        text-align: center;
+        padding: 10px;
+    }
+    .socials {
+        background: #0c0c0b;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 5px;
+    
+    }
+    .socials img{
+     border-radius: 50%; 
+     object-fit: cover;
+     margin: 0 50px;
+    }
+
+    .socials a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .socials a:hover {
+        color: #ff0000;
+    }
+    .sponsors img {
+border-radius: 50%; 
+object-fit: cover;
+margin: 0 50px;
+}
+.gold-text {
+color: gold;
+}
