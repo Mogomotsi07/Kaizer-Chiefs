@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .cart-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item img {
+            width: 100px;
+            height: auto;
+        }
+        .cart-item-info {
+            flex: 2;
+        }
+        .cart-item-price {
+            flex: 1;
+            text-align: right;
+        }
+        .checkout-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items">
+            
+        </div>
+        <button class="checkout-button" onclick="window.location.href='Checkout.html'">Proceed to Checkout</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const productId = params.get('id');
+            const productName = params.get('name');
+            const productPrice = params.get('price');
+            const productImage = params.get('image');
+
+            if (productId) {
+                const cartContainer = document.getElementById('cart-items');
+                const itemElement = document.createElement('div');
+                itemElement.className = 'cart-item';
+                itemElement.innerHTML = `
+                    <img src="${productImage}" alt="${productName}">
+                    <div class="cart-item-info">
+                        <h3>${productName}</h3>
+                    </div>
+                    <div class="cart-item-price">
+                        <p>${productPrice}</p>
+                    </div>
+                `;
+                cartContainer.appendChild(itemElement);
+            }
+        });
+    </script>
+</body>
+</html>
