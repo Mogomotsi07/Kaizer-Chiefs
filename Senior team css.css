@@ -1,0 +1,71 @@
+ header {
+    background-image: linear-gradient(to right, hsl(51, 100%, 37%) ,rgb(235, 235, 12));
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        body {
+            background-image: url('https://www.thesouthafrican.com/wp-content/uploads/2024/11/Kaizer-Chiefs-training-Image-via-@KaizerChiefs-on-X.jpg.webp');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        nav {
+            background: #f7f2d2;
+            cursor: pointer;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 5px 20px;
+            font-weight: 700;
+        }
+        nav ul li a:hover {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+        h1 {
+            color: #000;
+            text-align: center;
+        }
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .player-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+            padding: 10px;
+        }
+        .player-card:hover {
+            transform: scale(1.05);
+        }
+        .player-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .player-card h4 {
+            margin: 10px 0;
+        }
+        .player-card p {
+            margin: 5px 0;
+        }
+         footer {
+        background: #f7f2d2;
+        text-align: center;
+        padding: 10px;
+    }
